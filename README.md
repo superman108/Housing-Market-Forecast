@@ -49,7 +49,7 @@ Fun facts about Ames, IA are ([*source*](https://www.thinkames.com/ames-ia-named
 <br>
 <div align="justify">
 
-Ames holds one of the most expensive real estate markets in Iowa. The median home price in Ames is \\$239,563, which is substantially higher than the median price of \\$167,640 for homes in Iowa [(source)](https://www.zillow.com/ia/home-values). Close to 74% of homes in Ames are in the range of \\$107,000 to \\$321,000 (Figure 2). <br>
+Ames holds one of the most expensive real estate markets in Iowa. The median home price in Ames is \$239,563, which is substantially higher than the median price of \$167,640 for homes in Iowa [(source)](https://www.zillow.com/ia/home-values). Close to 74% of homes in Ames are in the range of \$107,000 to \$321,000 (Figure 2). <br>
 As shown in Figure 3, apartment complexes (41% of available homes) and single-family homes (40% of total available homes) are the most prevalent housing types in the town. Most of the residential properties has been built after 1970, as shown in Figure4. <br>
 As shown in Figure 5, renters and homeowners occupy more than 65% and 34% of homes in Ames, IA, respectively. Since half of the town residents are college students, who leave the town after their graduation, a large percentage of residential properties are apartment complexes and renters’ properties. Students usually prefer to live in apartment complexes, and not single-family homes, because of their perks, convenience, and a lack of interest for a longtime commitment
 
