@@ -15,7 +15,7 @@ This study develops a model to predict the sales price of residential properties
 - [Background](#Background)
 - [Housing Market in Ames, IA](#Housing-Market-in-Ames,-IA)
 - [Datasets](#Background)
-- [Methodlology](#Methodlology)
+- [Methodology](#Methodology)
 - [Regression Model](#Regression-Model)
 - [Conclusion Model](#Conclusion)
 - [References](#References)
