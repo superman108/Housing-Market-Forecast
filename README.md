@@ -5,7 +5,7 @@
 <br>
 <div align="justify">
     
-This study develops a model to predict the sales price of residential properties in Ames, IA. The features include square feet, number of bedrooms and bathroom, year-built, interior and exterior conditions, etc. Data set contains information from the Ames Assessor’s Office used in computing assessed values for individual residential properties sold in Ames, IA from 2006 to 2010 [[(*source*)](http://jse.amstat.org/v19n3/decock/DataDocumentation.txt). The model is trained with the data in Training set and evaluated with price of houses sold in Test set
+This study develops a model to predict the sales price of residential properties in Ames, IA. The features include square feet, number of bedrooms and bathrooms, year built, interior and exterior conditions, etc. The data set contains information from the Ames Assessor’s Office used in computing assessed values for individual residential properties sold in Ames, IA from 2006 to 2010 [[(*source*)](http://jse.amstat.org/v19n3/decock/DataDocumentation.txt). The model is trained with data in Training set and evaluated with price of houses sold in Test set.
 
 </div>
 
@@ -28,13 +28,13 @@ This study develops a model to predict the sales price of residential properties
     
 Ames, founded in 1864, is a college town in the Story County in central Iowa with a population of 66,258 in 2019. The city was named after Oakes Ames, a 19th century U.S. congressman from Massachusetts, who was a railroad promoter and never lived in Ames, Iowa [(*source*)](https://www.cityofames.org/about-ames/interesting-facts-about-ames).
  
-The city is the home of Iowa State University (ISU) with 33,391 registered students in 2019. The State University is one of the largest universities in US and it accounts for half of the city population and is the top employer in the city. Ames, IA is the only city in US where half of its residents are enrolled a college.
+The city is the home of Iowa State University (ISU) with 33,391 registered students in 2019. The university is one of the largest universities in US and accounts for half of the city population and is the top employer in the city. Ames, IA is the only city in US where half of its residents are enrolled a college.
     
 Ames hosts multiple federal and state sites:
-- the largest federal animal disease center in the US
+- The largest federal animal disease center in the US
 - USDA's Agricultural Research Service's National Animal Disease Center (NADC)
 - USDA sites for the Animal and Plant Health Inspection Service (APHIS)
-- Ames also hosts the headquarters for the Iowa Department of Transportation ([*source*](https://en.wikipedia.org/wiki/Ames,_Iowa)).
+- Iowa Department of Transportation Headquarters  ([*source*](https://en.wikipedia.org/wiki/Ames,_Iowa)).
 
 Fun facts about Ames, IA are ([*source*](https://www.thinkames.com/ames-ia-named-best-college-town-in-america/)):
 - Adults with a bachelor’s degree: 62.7%
@@ -50,8 +50,8 @@ Fun facts about Ames, IA are ([*source*](https://www.thinkames.com/ames-ia-named
 <div align="justify">
 
 Ames holds one of the most expensive real estate markets in Iowa. The median home price in Ames is \$239,563, which is substantially higher than the median price of \$167,640 for homes in Iowa [(source)](https://www.zillow.com/ia/home-values). Close to 74% of homes in Ames are in the range of \$107,000 to \$321,000 (Figure 2). <br>
-As shown in Figure 3, apartment complexes (41% of available homes) and single-family homes (40% of total available homes) are the most prevalent housing types in the town. Most of the residential properties has been built after 1970, as shown in Figure4. <br>
-As shown in Figure 5, renters and homeowners occupy more than 65% and 34% of homes in Ames, IA, respectively. Since half of the town residents are college students, who leave the town after their graduation, a large percentage of residential properties are apartment complexes and renters’ properties. Students usually prefer to live in apartment complexes, and not single-family homes, because of their perks, convenience, and a lack of interest for a longtime commitment
+As shown in Figure 3, apartment complexes (41% of available homes) and single-family homes (40% of total available homes) are the most prevalent housing types in the town. Most of the residential properties were built after 1970. (Figure 4) <br>
+Renters and homeowners occupy more than 65% and 34% of homes in Ames, IA, respectively. (Figure 5) Since half of the town residents are college students, who leave the town after their graduation, a large percentage of residential properties are apartment complexes and rental properties. Students usually prefer to live in apartment complexes, and not single-family homes, because of apartment perks, convenience, and a lack of interest for a longtime commitment
 
 <table><tr>
 <td bgcolor="ghostwhite"> 
@@ -107,7 +107,7 @@ As shown in Figure 5, renters and homeowners occupy more than 65% and 34% of hom
 <br>
 <div align="justify">
 
-The raw data available on [AmesHousing](http://jse.amstat.org/v19n3/decock/DataDocumentation.txt) has 82 columns which include 23 nominal, 23 ordinal, 14 discrete, and 20 continuous variables; however, for this study, the data is being split into two separate Training and test sets. The Training set has 2051 observations with 81 features (including the sale price). The Test set has 878 observations with 80 features, which excludes the sale price since this is the target variable. In Training and Test datasets, there are 9822 and 4171 missing values, respectively. Pool_QC, Misc_Feature, Alley, Fence, and Fireplace_Qu acount for 87% of missing values in both Training and Test sets.
+The raw data available on [AmesHousing](http://jse.amstat.org/v19n3/decock/DataDocumentation.txt) has 82 columns which include 23 nominal, 23 ordinal, 14 discrete, and 20 continuous variables; however, for this study, the data is being split into two separate Training and Test sets. The Training set has 2051 observations with 81 features (including the sale price). The Test set has 878 observations with 80 features, which excludes the sale price since this is the target variable. In the Training and Test datasets, there are 9822 and 4171 missing values, respectively. Pool_QC, Misc_Feature, Alley, Fence, and Fireplace_Qu acount for 87% of the missing values in both the Training and Test sets.
 
 
 
@@ -203,7 +203,7 @@ The raw data available on [AmesHousing](http://jse.amstat.org/v19n3/decock/DataD
 
 #### 1. Raw Data Analysis:
 
-This project predicts the sales price of residential properties in Ames, IA; therefore, all the datapoints that have not been tagged as residential are removed from Training set. The exercise reduces the dimensions of Training set from (2051, 81) to (2029, 81). The *PID* (Parcel identification number) column is being dropped from Training and Test sets. <br>
+This project predicts the sales price of residential properties in Ames, IA; therefore, all the datapoints that have not been tagged as residential are removed from the Training set. The exercise reduces the dimensions of the Training set from (2051, 81) to (2029, 81). The PID (Parcel identification number) column is being dropped from the Training and Test sets.  <br>
 
 
 |Zoning Type|Value counts of different zoning in Training|	Value counts of different zoning in Test|
@@ -217,9 +217,9 @@ This project predicts the sales price of residential properties in Ames, IA; the
 |Residential Medium Density|	316|	146|
 
 
-There are also inconsistencies in data type in 'Garage_Cars' column between Training and Test sets. The values in this column are changed from floats to integers. The single missing value in this column is replaced by the mode of 'Garage_Type'=='Detchd', which is equal to 2. <br>
+There are also inconsistencies in data type in 'Garage_Cars' column between the Training and Test sets. The values in this column are changed from floats to integers. The single missing value in this column is replaced by the mode of 'Garage_Type'=='Detchd', which is equal to 2. <br>
 
-Another probel is presence of outliers in Gr_Liv_Area and Lot_Area columns in Training set. The two outliers in Gr_Liv_Area are relatively large houses but sold for prices, which may not represent their actual market values.
+Another problem is the presence of outliers in Gr_Liv_Area and Lot_Area columns in the Training set. The two outliers in Gr_Liv_Area are relatively large houses but sold for prices, which may not represent their actual market values.
 
 
 <table><tr>
@@ -291,9 +291,9 @@ By looking at the statistics shown below, a typo is discovered in one of the ent
 #### 2. Transformation and Selection of Numerical Features:
 
 Three new columns are created to account for house age, year-passed since remodeling or renovation, and the overall home condition (being a combination of overall house material and condition). The overall house material and condition are scaled from 1 to 10, where 1 and 10 represent very poor and very excellent quality or condition. <br>
-The table in Dataset section show that several features in both Training and Test sets have missing values. The NaN values for these features should be handled before doing any modeling. A developed function assumes a linear relationship between the features with missing values and their Gr_Liv_Area.
+The table in the Dataset section show that several features in both the Training and Test sets have missing values. The NaN values for these features should be handled before doing any modeling. A developed function assumes a linear relationship between the features with missing values and their Gr_Liv_Area. 
 <br>
-Below is a histogram of numerical columns in Training dataset. The plots suggest that the data is heavily skewed, and it requires a form of transformation or normalization (Figure 9 and Figure 10). A log transformation is applied to the numerical features and the target variable (SalePrice) to create a more normal distribution. The 'Year_Built', 'Year_Remod/Add', and 'Garage_Yr_Blt' are dropped before training the model.
+Below is a histogram of numerical columns in the Training dataset. The plots suggest that the data is heavily skewed, and it requires a form of transformation or normalization (Figure 9 and Figure 10). A log transformation is applied to the numerical features and the target variable (SalePrice) to create a more normal distribution. The 'Year_Built', 'Year_Remod/Add', and 'Garage_Yr_Blt' are dropped before training the model.
 
 
 
@@ -314,7 +314,7 @@ Below is a histogram of numerical columns in Training dataset. The plots suggest
 <br>
 
 
-Heatmap is a helpful tool to graphically represent the collinearity between features and select the features for the model. Figure 11 shows heatmap of the numerical features vs the target variable (SalePrice). The selected features have a Pearson correlation coefficient of 0.18 to 0.90 against the SalePrice variable. Figure 12 uses the Regplot function in Seaborn to show a linear regression model fit for the selected features vs. the SalePrice target.
+Heatmap is a helpful tool to graphically represent the collinearity between features. Figure 11 shows the heatmap of the numerical features vs the target variable (SalePrice). The selected features have a Pearson correlation coefficient of 0.18 to 0.90 against the SalePrice variable. Figure 12 uses the Regplot function in Seaborn to show a linear regression model fit for the selected features vs. the SalePrice target.
 
 
 <table><tr>
@@ -343,7 +343,7 @@ Heatmap is a helpful tool to graphically represent the collinearity between feat
 
 #### 3. Categorical Features Selection:
 
-In this section, Lasso is used to filter out the features that have no significant impacts on sales price. First, each categorical variable is being dummified and its RMSE score is calculated. A combination of RMSE score and the values of Lasso coefficients determines whether to keep or drop a specific feature. Figure 14 uses a boxplot to visualize the significance of different groups in each feature against the SalePrice variable. As shown in this figure, not all the dumified variables have substantial impacts on RMSE. A second round of iterative process filters out the insignificant dummified variables. The red circles in horizontal label for each feature shows the selected dumified variables.
+In this section, Lasso is used to filter out the features that have no significant impacts on the sales price. First, each categorical variable is being dummified and its RMSE score is calculated. A combination of RMSE score and the values of Lasso coefficients determines whether to keep or drop a specific feature. Figure 14 uses a boxplot to visualize the significance of different groups in each feature against the SalePrice variable. As shown in this figure, not all the dumified variables have substantial impacts on RMSE. A second round of iterative process filters out the insignificant dummified variables. The red circles in horizontal label for each feature shows the selected dumified variables.
 
 
 <figure>
@@ -356,10 +356,10 @@ In this section, Lasso is used to filter out the features that have no significa
 
 ### Regression Model
 
-The next step after cleaning data, managing missing values, and features selection is to train a multiple linear regression model. Before using this method, it is a good practice to make sure that the data meets the required assumptions. The multiple regression model assumes that the relationship between independent variable and the target variable is linear. Homoscedasticity, independence of observations, and normality are other assumptions. The Training dataset is split 75\% to 25\% to two independent sets using the sklearn train_test_split function. After data split, models are trained with a 5-fold cross validation.
+The next step after cleaning the data, managing missing values, and features selection is to train a multiple linear regression model. Before using this method, it is good practice to make sure that the data meets the required assumptions. The multiple regression model assumes that the relationship between the independent variable and the target variable is linear. Homoscedasticity, independence of observations, and normality are other assumptions. The Training dataset is split 75% to 25% to two independent sets using the sklearn train_test_split function. After the data split, models are trained with a 5-fold cross validation.
 
 
-Figure 15a, b shows the scatter plots of the predicted values vs. actual values, and the residuals for Ridge regression. The normal shape of residuals around the horizontal axis shows the multiple linear regression is a good model to fit the data.
+Figure 15a & 15b show the scatter plots of the predicted values vs. actual values, and the residuals for Ridge regression. The normal shape of residuals around the horizontal axis shows the multiple linear regression is a good model to fit the data.
 
 
 
@@ -379,7 +379,7 @@ Figure 15a, b shows the scatter plots of the predicted values vs. actual values,
 </tr></table> 
 
 
-Below shows how linear, lasso, and ridge regression models perform on the Training data. All these models report RMSE around $21600. A total of 63 features are selected for the modeling. The cross validation and test score on Training set show that the model is not suffering from any bias, since the reported numbers for train and test sets are very similar. The rigorous features selection in previous steps leads to having very close R2 and RMSE scores among Lasso, Ridge and linear regression. These scores show that the data doesn't necessarily need regularization, since the purpose of regularization is (1) to dampen the coefficients with minimal substantial impacts on the target variable, and (2) to remove multicollinearity between independent variables. Figures 16 and 17 show the distribution of residuals and calculated coefficients for Ridge regularization. The residuals have a clean distribution along the zero line, but there are some deviations at very low or very high sales prices. This can be explained by the lack of enough observations at these two ends. Gr_Liv_Area columns has the most contribution to sale price prediction. The RMSE score for the independent Test set is $21096, which is slightly lower than the RMSE of $21600 for the Training set. This suggests that the model is not suffering from any high variance.
+Below shows how the linear, lasso, and ridge regression models perform on the Training data. All these models report RMSE around $21600. A total of 63 features are selected for the modeling. The cross validation and test score on the Training set show that the model is not suffering from any bias, since the reported numbers for the train and test sets are very similar. The rigorous features selection in previous steps leads to having very close R2 and RMSE scores among Lasso, Ridge and linear regression. These scores show that the data doesn't necessarily need regularization, since the purpose of regularization is (1) to dampen the coefficients with minimal substantial impacts on the target variable, and (2) to remove multicollinearity between independent variables. Figures 16 and 17 show the distribution of residuals and calculated coefficients for the Ridge regularization. The residuals have a clean distribution along the zero line, but there are some deviations at very low or very high sales prices. This can be explained by the lack of observations at these two ends. The Gr_Liv_Area columns have the most contribution to sale price prediction. The RMSE score for the independent Test set is $21,096, which is slightly lower than the RMSE of $21,600 for the Training set. This suggests that the model is not suffering from any high variance.
 
 
 <table><tr>
@@ -410,7 +410,7 @@ Below shows how linear, lasso, and ridge regression models perform on the Traini
 
 ### Conclusion
 
-The EDA and the developed model suggest that sales price is a strong function of living area, house interior and exterior qualities, house age, neighborhood, and building types. The regularization techniques in Lasso and Ridge help to filter out the insignificant features. Below suggests that the score for linear regression without any regularization is close to the scores from Ridge or Lasso if and only if the significant features are selected for training the model.
+The EDA and the developed model suggest that the sales price is a strong function of the living area, house interior and exterior qualities, house age, neighborhood, and building types. The regularization techniques in Lasso and Ridge help to filter out the insignificant features. Below suggests that the score for linear regression without any regularization is close to the scores from Ridge or Lasso if and only if the significant features are selected for training the model.
 
 
 
